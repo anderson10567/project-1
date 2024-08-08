@@ -1,0 +1,226 @@
+.price__header {
+  background-color: white;
+  border-top: 3px solid #D9FFF5;
+  height: 80px;
+  min-height: 80px;
+  width: 100%;
+  margin-top: 50px;
+}
+.price__title {
+  height: 80px;
+  min-width: 320px;
+  font-size: x-large;
+  letter-spacing: 2px;
+  font-weight: normal;
+  color: #7E7E82;
+  margin: 0px;
+  padding: 15px;
+}
+
+.price-container {
+  min-width: 260px;
+  max-width: 260px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  min-width: 260px;
+}
+
+.price-swiper__list {
+  color: #7E7E82;
+  font-size: 14px;
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+
+.price-swiper__description {
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 15px;
+  position: relative;
+  left: -25px;
+}
+
+.price-swiper__button {
+  width: 110px;
+  height: 30px;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: white;
+  background-color: #FF3E79;
+  border: 2px solid #EAEAEA;
+  border-radius: 20px;
+  position: relative;
+  top: -60px;
+  left: -10px;
+}
+.price-swiper__button:hover {
+  background: linear-gradient(231deg, #233756 15%, rgba(235, 56, 178, 0.9764705882) 45.61%);
+  transform: scale(1.1);
+}
+
+.price-swiper-pagination {
+  position: relative;
+  transform: scale(1.5);
+  margin-top: 30px;
+  color: black;
+  text-align: center;
+}
+
+.main__about-price {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 10px;
+  margin-right: 20px;
+  letter-spacing: 0.2px;
+}
+
+.main__offer-link {
+  font-size: 14px;
+  color: #1B1C21;
+  text-decoration: none;
+  letter-spacing: -0.2px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.main__offer-img {
+  position: relative;
+  top: 10px;
+}
+.main__offer-img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.main-footer {
+  color: #7E7E82;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.main-footer__trademark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #7E7E82;
+}
+
+.main-footer__politic {
+  margin-top: 10px;
+}
+
+.main-footer__ofert {
+  margin-left: 25px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.noswiper-price {
+  display: none;
+}
+
+@media (min-width: 500px) {
+  .swiper-wrapper {
+    display: none;
+  }
+  .price-swiper-pagination {
+    display: none;
+  }
+  .noswiper-price {
+    display: flex;
+    width: 100%;
+  }
+  .noswiper-price__table {
+    width: 100%;
+    height: 350px;
+    border-collapse: collapse;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+  }
+  .noswiper-price__title {
+    font-size: 14px;
+    line-height: 16px;
+    color: #7E7E82;
+    position: relative;
+    top: -30px;
+  }
+  .noswiper-price__body {
+    background-color: white;
+  }
+  .noswiper-price__cell {
+    border-bottom: 1px solid #EAEAEA;
+    font-size: 14px;
+  }
+  .noswiper-price__description {
+    padding-left: 10px;
+  }
+  .noswiper-price__button {
+    width: 110px;
+    height: 30px;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    background-color: #FF3E79;
+    border: 2px solid #EAEAEA;
+    border-radius: 20px;
+    padding-right: 5px;
+    margin-right: 10px;
+  }
+  .noswiper-price__button:hover {
+    background: linear-gradient(231deg, #233756 15%, rgba(235, 56, 178, 0.9764705882) 45.61%);
+    transform: scale(1.1);
+  }
+}
+@media (min-width: 768px) {
+  .noswiper-price__title {
+    position: relative;
+    left: -20px;
+  }
+  .main__about-price {
+    width: 600px;
+  }
+  .main-footer {
+    flex-direction: row;
+    gap: 100px;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .main-footer__ofert {
+    width: 300px;
+  }
+}
+@media (min-width: 900px) {
+  .noswiper-price__title {
+    position: relative;
+    left: -30px;
+  }
+  .noswiper-price__button {
+    position: relative;
+    left: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .noswiper-price__title {
+    position: relative;
+    left: -50px;
+  }
+}/*# sourceMappingURL=swiper-price.css.map */

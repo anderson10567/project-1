@@ -1,0 +1,188 @@
+//модалка "обратная связь"
+
+.popup-communication{
+
+  background-color: white;
+  width: 320px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  display:none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1001;
+  box-shadow: -2px 0 4px rgba(69, 79, 126, 0.02), 16px 0 52px rgba(14, 24, 80, 0.2);
+
+&__button1{
+
+  position: relative;
+  top: 5px;
+  left: -120px;
+  border: none;
+  background-color: #d1d1d100;;
+  transition-duration: 0.4s;
+
+   &:hover{
+   transform: scale(1.1) rotate(360deg);
+   filter: saturate(1.6);
+
+ }
+  }
+
+ &__highliting{
+
+  position: relative;
+  top: -5px;
+  left: -158px
+}
+
+&__title{
+
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  position: relative;
+  top: -75px;
+  left: -65px;
+}
+
+&__input{
+
+  border: 2px solid #EAEAEA;
+  border-radius: 10px;
+  width: 288px;
+  height: 48px;
+  position: relative;
+  top: -95px;
+
+  &::placeholder{
+
+  position: relative;
+  left:10px;
+
+  }
+}
+
+.input__sms{
+
+  width: 288px;
+  height: 118px;
+
+&::placeholder{
+
+  position: relative;
+  top:-40px;
+
+}
+}
+
+&__text1{
+
+  font-size: 14px;
+  line-height: 16px;
+  position: relative;
+  top: -100px;
+  margin-left: 25px;
+  margin-right: 25px;
+
+}
+
+.popup__link{
+
+ color:#FF3E79
+
+}
+
+&__button2{
+
+  width: 110px;
+  height: 30px;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: white;
+  background-color: #FF3E79;
+  border: 2px solid #EAEAEA;
+  border-radius: 20px;
+  position: relative;
+  top: -110px;
+  left: 90px;
+
+&:hover{
+
+
+  background: linear-gradient(231deg, #057b46 15%, #6b3d5cf9 45.61%);
+  transform:scale(1.1);
+}
+}
+&.active-chat  {
+
+  display: flex;
+}
+
+  }
+
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:white;
+  z-index: 998;
+  visibility: hidden;
+  opacity: 0.9;
+
+ &.active-chat{
+
+  visibility: visible;
+
+  }
+}
+
+  @media (min-width: 1120px) {
+
+
+.popup__close-btn{
+
+  position: absolute;
+  left: -80px;
+  top: 20px;
+
+}
+
+.popup-communication{
+
+ &__highliting{
+
+  top: 5px;
+
+}
+
+&__title{
+
+  top: -72px;
+
+}
+
+&__text1{
+
+  top: -108px;
+
+}
+
+&__button2{
+
+  top: -125px;
+
+ }
+      }
+
+    }
+
+

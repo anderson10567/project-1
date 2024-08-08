@@ -1,0 +1,145 @@
+.section .section__header {
+  background-color: #fff;
+  border-top: 3px solid #D9FFF5;
+  height: 80px;
+  min-height: 80px;
+  width: 100%;
+  margin-top: 50px;
+}
+.section__title {
+  height: 80px;
+  min-width: 320px;
+  font-size: x-large;
+  letter-spacing: 2px;
+  font-weight: normal;
+  color: #7E7E82;
+  margin: 0px;
+  padding: 15px;
+}
+
+.custom-container {
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 224px;
+  min-width: 224px;
+  height: 160px;
+  background-color: #fff;
+  border: 2px solid #EAEAEA;
+  border-radius: 6px;
+}
+
+.second-swiper-pagination {
+  position: relative;
+  text-align: center;
+  margin-top: 30px;
+  color: #000000;
+}
+
+.second-swiper__link {
+  color: #000000;
+  text-decoration: none;
+  position: relative;
+  top: -70px;
+  right: 6px;
+}
+
+.second-swiper__img {
+  position: relative;
+  top: 120px;
+  left: 15px;
+  transition-duration: 0.4s;
+}
+.second-swiper__img:hover {
+  transform: rotate(360deg);
+}
+
+.noswiper2 {
+  display: none;
+}
+
+.my-button__menu2 {
+  display: none;
+}
+
+.arrow2 {
+  display: none;
+}
+
+@media (min-width: 500px) {
+  .swiper-wrapper {
+    display: none;
+  }
+  .second-swiper-pagination {
+    display: none;
+  }
+  .noswiper2 {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .noswiper__link2 {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: flex-end;
+    width: 224px;
+    min-width: 224px;
+    height: 160px;
+    background-color: #fff;
+    border: 2px solid #EAEAEA;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #000000;
+  }
+  .noswiper__link2 img {
+    transition-duration: 0.5s;
+  }
+  .noswiper__link2 img:hover {
+    transform: scale(1) rotate(360deg);
+    filter: saturate(1.6);
+  }
+  .my-button__menu2 {
+    display: flex;
+    border: none;
+    background-color: #F8F8F8;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    color: #000000;
+    position: relative;
+    top: 20px;
+    left: 50px;
+  }
+  .my-button__menu2:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  .arrow2 {
+    display: flex;
+  }
+  .arrow__down2 {
+    position: relative;
+    top: -3px;
+    left: 17px;
+    animation-name: rotateArrow2;
+    animation-duration: 1s;
+  }
+  .hidden2 {
+    display: none;
+  }
+  .arrow__up2 {
+    position: relative;
+    top: -3px;
+    left: 17px;
+    animation-name: rotateArrow2;
+    animation-duration: 1s;
+  }
+}/*# sourceMappingURL=swiper-technics.css.map */

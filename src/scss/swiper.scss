@@ -1,0 +1,385 @@
+//стили для брендов -свайпер и несвайпер
+  $Color: #D9FFF5;
+  $ff: #fff;
+  $ba:black;
+  $gd:#F8F8F8;
+
+
+html {
+
+  overflow-x: hidden;
+
+}
+
+body{
+
+  min-width: 320px;
+  overflow-x: hidden;
+  background-color: $gd;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+.header__header{
+
+  background-color: $ff;
+  border-top:3px solid #D9FFF5 ;
+  height: 80px;
+  min-height: 80px;
+  width: 100%;
+  margin-top: 50px;
+
+}
+
+.header__text{
+
+  height: 80px;
+  min-width: 320px;
+  font-family:TT Lakes,sans-serif;
+  font-size: x-large;;
+  letter-spacing: 2px;
+  font-weight: normal;
+  color: #7E7E82;
+  margin: 0px;
+  padding: 15px;
+
+}
+
+.swiper-slide {
+
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 240px;
+  min-width: 240px;
+  height: 72px;
+  background-color: $ff;
+  border:2px solid  #EAEAEA;
+  border-radius: 6px;
+
+}
+
+.swiper__link{
+
+  text-decoration: none;
+
+}
+
+.swiper__img1{
+
+  position: relative;
+  left: -25px;
+
+}
+
+.swiper__img2{
+
+  position: relative;
+  left: 25px;
+  transition-duration: 0.5s;
+
+      &:active {
+        transform: scale(1) rotate(360deg);
+        filter: saturate(1.6);
+      }
+    }
+
+.swiper__img3{
+
+  position: relative;
+  left: -30px;
+
+}
+
+.swiper__img4{
+
+  position: relative;
+  left: 25px;
+
+  &:active {
+    transform: scale(1) rotate(360deg);
+    filter: saturate(1.6);
+  }
+}
+
+.swiper__img5{
+
+  position: relative;
+  left: -60px;
+  top: -2px;
+}
+
+.swiper__img6{
+
+  position: relative;
+  left: 55px;
+
+  &:active {
+    transform: scale(1) rotate(360deg);
+    filter: saturate(1.6);
+  }
+}
+
+.swiper__img7{
+
+  position: relative;
+  left: -25px;
+  top: -5px;
+}
+
+.swiper__img8{
+
+  position: relative;
+  left: 25px;
+
+  &:active {
+    transform: scale(1) rotate(360deg);
+    filter: saturate(1.6);
+  }
+}
+
+.swiper__img9{
+
+  position: relative;
+  left: -65px;
+}
+
+.swiper__img10{
+
+  position: relative;
+  left: 50px;
+  top: -5px;
+
+  &:active {
+    transform: scale(1) rotate(360deg);
+    filter: saturate(1.6);
+  }
+}
+
+.swiper__img11{
+
+  position: relative;
+  left: -40px;
+  top: -5px;
+}
+
+.swiper__img12{
+
+  position: relative;
+  left: 30px;
+
+  &:active {
+    transform: scale(1) rotate(360deg);
+    filter: saturate(1.6);
+  }
+}
+
+.swiper__img13{
+
+  position: relative;
+  left: -20px;
+  top: -7px;
+}
+
+.swiper__img14{
+
+  position: relative;
+  left: 20px;
+
+  &:active {
+    transform: scale(1) rotate(360deg);
+    filter: saturate(1.6);
+  }
+}
+
+.swiper__img15{
+
+  position: relative;
+  left: -20px;
+  top:- 2px;
+}
+
+.swiper__img16{
+  position: relative;
+  left: 20px;
+
+  &:active {
+    transform: scale(1) rotate(360deg);
+    filter: saturate(1.6);
+  }
+}
+
+.noswiper{
+
+  display: none;
+
+}
+
+.button{
+
+  display: none;
+
+}
+
+.arrow{
+
+  display: none;
+
+}
+
+.swiper-pagination{
+
+  position: relative;
+  margin-top: 30px;
+  color: $ba;
+  transform: scale(1.5);
+}
+
+@media(min-width:500px) {
+
+.noswiper{
+
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+}
+
+.swiper-wrapper{
+
+  display: none;
+
+}
+
+.swiper-pagination{
+
+  display:none;
+
+}
+
+.noswiper__link{
+
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 240px;
+  height: 72px;
+  background-color: $ff;
+  border: 2px solid  #EAEAEA;
+  border-radius: 6px;
+
+  img {
+    &:nth-child(2) {
+      transition-duration: 0.5s;
+
+      &:hover {
+        transform: scale(1) rotate(360deg);
+        filter: saturate(1.6);
+      }
+    }
+  }
+}
+
+.button{
+
+  display: flex;
+
+}
+
+.my-button__menu{
+
+  border: none;
+  background-color: $gd;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  color :$ba;
+  position: relative;
+  top: 20px;
+  left: 50px;
+
+}
+.my-button__menu:hover{
+
+  opacity: 0.5;
+}
+
+.arrow{
+
+  display: flex;
+
+}
+
+.arrow__down{
+
+ animation-name: rotateArrow2;
+ animation-duration: 1s;
+ position: relative;
+ top: -3px;
+ left :17px;
+
+}
+
+.arrow__up{
+
+  animation-name: rotateArrow2;
+  animation-duration: 1s;
+  position: relative;
+  top: -3px;
+  left: 17px;
+
+}
+
+.hidden{
+
+  display: none;
+
+}
+
+.noswiper__link:nth-child(7){
+
+  display: none;
+
+}
+.noswiper__link:nth-child(8){
+
+  display: none;
+
+}
+
+a:hover{
+  opacity: 0.5;
+  cursor: pointer;
+
+}
+
+.arrow:hover{
+
+  cursor: pointer;
+
+}
+
+.hidden:hover{
+  cursor:pointer;
+}
+}
+
+@media(min-width:1000px) {
+
+.noswiper__link:nth-child(7){
+
+  display: flex;
+
+}
+.noswiper__link:nth-child(8){
+
+  display: flex;
+
+}
+  }
